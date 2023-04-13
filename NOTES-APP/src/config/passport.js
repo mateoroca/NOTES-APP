@@ -20,7 +20,6 @@ passport.use(new LocalStrategy({
         
       }
       else{
-        console.log(user.email)
         return done(null,user);
       }
     }
