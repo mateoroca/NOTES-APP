@@ -1,0 +1,44 @@
+body {
+  background: #a8c0ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.jumbotron.mt-4 {
+  background-color: #fff;
+  border-radius: 10px 5px 10px 5px;
+}
+
+.buton-form-new-notes {
+
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.center {
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+.signin-card-body{
+  background-image: url('/img/login-img.jpg') ;
+  background-position:center;
+  background-size: cover;
+  overflow: hidden;
+}
