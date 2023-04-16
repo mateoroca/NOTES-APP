@@ -14,8 +14,9 @@ const app = express();
 require('./database');
 require('./config/passport');
 
+
 //setting
-const PORT = process.env.PORT || 3000 ;
+const PORT = process.env.PORT ||3000;
 
 app.set('port',PORT);
 app.set('views',path.join(__dirname , 'views'));
