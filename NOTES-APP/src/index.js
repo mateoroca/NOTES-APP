@@ -7,13 +7,17 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 
+
+
 //initializacion 
 const app = express();
 require('./database');
 require('./config/passport');
 
 //setting
-app.set('port', process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000 ;
+
+app.set('port',PORT);
 app.set('views',path.join(__dirname , 'views'));
 app.engine('.hbs', exphbs.engine({
   defaultLayout: 'main',
@@ -65,6 +69,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 //Server is Listenning
 
-app.listen(app.get('port'), ()=>{
-  console.log(`Server listening on port ${app.get('port')}`);
+app.listen(PORT, ()=>{
+  console.log(`Server listening on port ${PORT}`);
 })
+

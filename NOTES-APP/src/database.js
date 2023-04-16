@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
+require('dotenv').config({path:'../.env'});
 
-const DBurl =
-  "mongodb+srv://mateojoserocaclemntis17:LACHANCHAESTAENLAPOSILGA10@cluster0.qdxzljj.mongodb.net/app-notes?retryWrites=true&w=majority";
 
-mongoose.connect(DBurl,{
+const DB_URL = process.env.DB_URL;
+  
+
+mongoose.connect(DB_URL,{
   useNewUrlParser: true,/*  */
   useUnifiedTopology: true,
   /* serverApi: ServerApiVersion.v1  */
